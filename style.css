@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Work+Sans:wght@400;500&display=swap');
+
+/*
+font-family: 'Merriweather', serif; // 300 400
+font-family: 'Work Sans', sans-serif; // 400 500
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(252,253,255);
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.bg-free {
+    box-shadow: 0px 0px 150px 150px rgba(237,187,255,0.5);
+    -webkit-box-shadow: 0px 0px 150px 150px rgba(237,187,255,0.5);
+    -moz-box-shadow: 0px 0px 150px 150px rgba(237,187,255,0.5);
+    position: absolute;
+    z-index: -1;
+    bottom: -1rem;
+    left: -1rem;
+}
+
+.bg-standard {
+    box-shadow: 0px 0px 150px 150px rgba(174,241,245,0.5);
+    -webkit-box-shadow: 0px 0px 150px 150px rgba(174,241,245,0.5);
+    -moz-box-shadow: 0px 0px 150px 150px rgba(174,241,245,0.5);
+    position: absolute;
+    z-index: -1;
+    top: -1rem;
+    left: 12rem;
+}
+
+.bg-premium {
+    box-shadow: 0px 0px 150px 150px rgba(255,221,182,0.5);
+    -webkit-box-shadow: 0px 0px 150px 150px rgba(255,221,182,0.5);
+    -moz-box-shadow: 0px 0px 150px 150px rgba(255,221,182,0.5);
+    position: absolute;
+    z-index: -1;
+    top: -0.5rem;
+    right: -0.5rem;
+    
+}
+
+.container {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.541);
+    outline-style: solid;
+    outline-width: 0.6rem;
+    outline-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    margin-inline: 1rem;
+    position: relative;
+}
+
+.container > div {
+    margin: 2.5rem;
+}
+
+.container {
+    max-width: 45rem;
+}
+
+col > * {
+    margin-block: .7rem;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-block: 0.5rem 0.1rem;
+}
+
+span {
+    font-size: 2rem;
+}
+
+.price-text {
+    font-size: 0.6rem;
+    font-weight: 600;
+
+}
+
+.description {
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-block: 1.5rem;
+}
+
+button {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem 0.7rem;
+}
+
+button > a {
+    text-decoration: none;
+    font-size: 0.78rem;
+    color: inherit;
+}
+
+.btn-free {
+    background-color: rgb(237,187,255);
+}
+
+.btn-standard {
+    background-color: rgb(174,241,245);
+}
+
+.btn-premium {
+    background-color: rgb(255,221,182);
+}
+
+
+@media screen and (max-width: 50em) {
+
+    .container {
+        flex-direction: column;
+    }
+    
+    .container > .col {
+        text-align: center;
+        margin: 0;
+        padding: 2.5rem;
+    }
+
+
+}
+
+
